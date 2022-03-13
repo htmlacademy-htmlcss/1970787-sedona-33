@@ -28,6 +28,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 36px;
+  font-weight: 400;
   color: #333333;
 
   background-color: #f2f2f2;
@@ -59,7 +60,7 @@ body {
   clip-path: inset(100%);
 }
 
-/* Хедер */
+/* Header */
 
 .page-header {
   position: relative;
@@ -70,6 +71,7 @@ body {
 .logo-link {
   position: absolute;
   left: 70px;
+  z-index: 1;
 }
 
 .navigation {
@@ -127,8 +129,10 @@ body {
   top: 15px;
   left: 25px;
 
+  box-sizing: border-box;
   width: 20px;
   height: 20px;
+  padding: 3px 0;
 
   font-size: 10px;
   line-height: 13px;
@@ -138,12 +142,6 @@ body {
 
   background-color: #7db54f;
   border-radius: 10px;
-}
-
-.welcome {
-  background-image: url(../images/index-background.jpg);
-  width: 1200px;
-  height: 485px;
 }
 
 /* Button */
@@ -171,3 +169,229 @@ body {
 .button-brown {
   background-color: #756257;
 }
+
+/* Main-welcome */
+
+.welcome {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1200px;
+  height: 485px;
+  margin-bottom: 63px;
+
+  background-color: #dfedf6;
+  background-image: url(../images/index-background.jpg);
+}
+
+.welcome-img {
+  padding-top: 51px;
+}
+
+.slogan-logo {
+  padding-top: 53px;
+}
+
+.welcome::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+
+  display: block;
+  width: 1200px;
+  height: 57px;
+
+  background-image: url(../images/welcome-pattern.svg);
+}
+
+/* Main-advantages */
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-title {
+  margin: 0;
+  padding: 0 240px;
+
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.advantages-title {
+  margin-bottom: 31px;
+}
+
+.main-text {
+  margin: 0;
+  padding: 0 240px;
+
+  text-align: center;
+}
+.advantages-text {
+  margin-bottom: 80px;
+}
+
+.advantages-list {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+
+  margin: 0 0 91px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.advantages-item {
+  box-sizing: border-box;
+  min-height: 384px;
+  padding: 98px 75px 0;
+}
+
+.advantages-photo {
+  display: flex;
+  align-items: center;
+  padding: 0;
+
+  line-height: 0;
+
+  background-color: #83b3d3;
+  grid-column: span 2;
+}
+
+.advantages-photo-text {
+  padding: 98px 90px 0;
+
+  background-color: #83b3d3;
+}
+
+.advantages-with-picture {
+  position: relative;
+
+  padding: 184px 75px 0;
+}
+
+.advantages-blue {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-lightblue {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-title {
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
+
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.advantages-item-text {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.advantages-photo-text > .advantages-item-title {
+  color: #ffffff;
+}
+
+.advantages-photo-text > .advantages-item-text {
+  color: #ffffff;
+}
+
+.advantages-with-picture > .advantages-item-title {
+  margin-bottom: 20px;
+}
+
+.advantages-with-picture > .advantages-item-text {
+  margin-bottom: 20px;
+}
+
+.advantages-with-picture:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: 89px;
+  left: 163px;
+
+  width: 75px;
+  height: 72px;
+
+  background-image: url(../images/house.svg);
+  background-repeat: no-repeat;
+}
+
+.advantages-with-picture:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  top: 91px;
+  left: 163px;
+
+  width: 74px;
+  height: 70px;
+
+  background-image: url(../images/burger.svg);
+  background-repeat: no-repeat;
+}
+
+.advantages-with-picture:nth-child(5)::before {
+  content: "";
+  position: absolute;
+  top: 85px;
+  left: 168px;
+
+  width: 64px;
+  height: 76px;
+
+  background-image: url(../images/gift.svg);
+  background-repeat: no-repeat;
+}
+
+/* Main-search */
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 93px;
+}
+
+.search-title {
+  margin-bottom: 29px;
+}
+
+.search-text {
+  margin-bottom: 56px;
+}
+
+.search-button {
+  width: 575px;
+  height: 60px;
+  padding: 15px;
+
+  font-size: 20px;
+  line-height: 30px;
+
+  border-radius: 10px;
+}
+
+
