@@ -21,13 +21,12 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  min-height: 100%;
   margin: 0;
 
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
-  line-height: 36px;
+  line-height: 26px;
   font-weight: 400;
   color: #333333;
 
@@ -35,6 +34,8 @@ body {
 }
 
 .page-wrapper {
+  display: flex;
+  flex-direction: column;
   width: 1200px;
   margin: 0 auto;
 
@@ -170,6 +171,12 @@ body {
   background-color: #756257;
 }
 
+/* Main */
+
+main {
+  flex-grow: 1;
+}
+
 /* Main-welcome */
 
 .welcome {
@@ -238,6 +245,8 @@ body {
 }
 .advantages-text {
   margin-bottom: 80px;
+
+  line-height: 36px;
 }
 
 .advantages-list {
@@ -394,4 +403,92 @@ body {
   border-radius: 10px;
 }
 
+.mailing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 94px 0;
 
+  background-color: #89abb8;
+  background-image: url(../images/mailing-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.mailing-title {
+  margin-bottom: 29px;
+
+  color: #ffffff;
+}
+
+.mailing-text {
+  margin-bottom: 46px;
+
+  color: #ffffff;
+}
+
+.mailing-form {
+  display: flex;
+}
+
+.mailing-input {
+  box-sizing: border-box;
+  width: 600px;
+  height: 60px;
+  padding: 0 19px 0 22px;
+
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.mailing-input:hover {
+  background-color: #e6e6e6;
+}
+
+.mailing-input:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.mailing-input:invalid {
+  border: 2px solid #ff5757;
+}
+
+.mailing-button {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 200px;
+  height: 60px;
+  padding: 0;
+
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #83b3d3;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
+}
+
+.mailing-button:hover {
+  background-color: #68a2ca;
+}
+
+.mailing-button:focus {
+  outline: 3px solid #756257;
+}
+
+/* Footer */
+
+.page-footer {
+}
