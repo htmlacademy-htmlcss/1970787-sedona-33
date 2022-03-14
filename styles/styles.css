@@ -453,6 +453,34 @@ main {
   background-repeat: no-repeat;
 }
 
+/* Search */
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 93px;
+}
+
+.search-title {
+  margin-bottom: 29px;
+}
+
+.search-text {
+  margin-bottom: 56px;
+}
+
+.search-button {
+  width: 575px;
+  height: 60px;
+  padding: 15px;
+
+  font-size: 20px;
+  line-height: 30px;
+
+  border-radius: 10px;
+}
+
 /* Catalog */
 
 .catalog-wrapper {
@@ -785,33 +813,89 @@ main {
   height: 32px;
 }
 
-/* Search */
+/* Catalog-catalog */
 
-.search {
-  display: flex;
-  flex-direction: column;
+.catalog-title-wrapper {
+  display: grid;
+  justify-content: start;
   align-items: center;
-  margin-bottom: 93px;
+  margin-bottom: 53px;
+  padding: 44px 71px 0;
+  grid-template-columns: 2fr 1fr 1fr;
 }
 
-.search-title {
-  margin-bottom: 29px;
+.catalog-title {
+  padding: 0;
+
+  text-align: start;
 }
 
-.search-text {
-  margin-bottom: 56px;
+.select-control {
+  box-sizing: border-box;
+  width: 287px;
+  height: 48px;
+  padding: 0 19px;
+
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #333333;
+
+  background-image: url(../images/select-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 21px top 20px;
+  border: 2px solid #e6e6e6;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
-.search-button {
-  width: 575px;
-  height: 60px;
-  padding: 15px;
-
-  font-size: 20px;
-  line-height: 30px;
-
-  border-radius: 10px;
+.style-button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
+
+.catalog-style-button {
+  display: block;
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+  padding: 11px 0 0 12px;
+
+  border: 2px solid #e6e6e6;
+  border-radius: 4px;
+}
+
+.active-style-button {
+  border-color: #000000;
+}
+
+.catalog-style-button:last-child,
+.catalog-style-button:nth-child(4n)  {
+  margin-right: 0;
+}
+
+.catalog-style-button:not(:nth-child(-n+4)) {
+  margin-top: 8px;
+}
+
+.select-control:hover,
+.catalog-style-button:hover {
+  border-color: #83b3d3;
+}
+
+.select-control:focus,
+.catalog-style-button:focus {
+  border-color: #83b3d3;
+  outline: none;
+}
+
+
+/* Mailing */
 
 .mailing {
   display: flex;
