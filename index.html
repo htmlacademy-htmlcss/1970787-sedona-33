@@ -178,6 +178,74 @@
         </section>
       </footer>
     </div>
+    <div class="modal-container modal-conteiner-close"> <!-- Для показа модального окна убрать класс "modal-conteiner-close" -->
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group arrival-group">
+              <label class="search-date-label label" for="search-arrival">Дата заезда:</label>
+              <span class="search-input-wrapper">
+                <input class="search-form-field field" type="date" id="search-arrival" name="search-arrival" placeholder="Укажите дату">
+                <span class="search-form-text error-text">Мы не можем отправить вас в прошлое.</span> <!--Для сообщения об ошибке использовать класс "error-text"-->
+              </span>
+            </p>
+            <p class="field-group departure-group">
+              <label class="search-date-label label" for="search-departure">Дата выезда:</label>
+              <span class="search-input-wrapper">
+                <input class="search-form-field field" type="date" id="search-departure" name="search-departure" placeholder="Укажите дату">
+                <span class="search-form-text">На эти даты есть свободные номера. Пока есть.</span>
+              </span>
+            </p>
+            <p class="field-group adult-group">
+              <label class="search-quantity-label label" for="search-adult">Взрослые:</label>
+              <span class="search-quantity-wrapper">
+                <button class="search-quantity-button button-munus" type="button">
+                  <svg width="13" height="13" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                  </svg>
+                  <span class="visually-hidden">Уменьшить</span>
+                </button>
+                <input class="search-number-field field" type="number" value="2" id="search-adult" name="search-adult" min="1">
+                <button class="search-quantity-button button-plus" type="button">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                  </svg>
+                  <span class="visually-hidden">Увеличить</span>
+                </button>
+              </span>
+            </p>
+            <p class="field-group children-group">
+              <label class="search-quantity-label label" for="search-children">Дети:
+                <button class="search-info-button" type="button">i</button>
+                <span class="search-info-tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </label>
+              <span class="search-quantity-wrapper">
+                <button class="search-quantity-button button-munus" type="button">
+                  <svg width="13" height="13" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                  </svg>
+                  <span class="visually-hidden">Уменьшить</span>
+                </button>
+                <input class="search-number-field field" type="number" value="1" id="search-children" name="search-children" min="0">
+                <button class="search-quantity-button button-plus" type="button">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                  </svg>
+                  <span class="visually-hidden">Увеличить</span>
+                </button>
+              </span>
+            </p>
+
+            <button class="button button-blue search-form-button" type="submit">Найти</button>
+
+          </form>
+        </section>
+      </div>
+    </div>
 
   </body>
 </html>
