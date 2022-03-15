@@ -1198,6 +1198,24 @@ main {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.catalog-mailing {
+  margin-bottom: 116px;
+  padding: 0;
+
+  background-color: inherit;
+  background-image: none;
+}
+
+.catalog-mailing-title {
+  margin-bottom: 46px;
+
+  color: #000000;
+}
+
+.catalog-mailing-text {
+  color: #333333;
+}
+
 /* Footer */
 
 .page-footer {
